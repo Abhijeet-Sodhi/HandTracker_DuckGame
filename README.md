@@ -62,6 +62,22 @@ Hand detection process:
 A webcam feed is captured frame by frame.
 The HandDetector scans the video frame and identifies hand landmarks based on a pre-trained machine learning model.
 The landmarks include the positions of specific hand joints, such as fingertips, knuckles, and the base of the palm.
-A bounding box is drawn around the detected hand to visually indicate its position.The code calculates the distance between the base of the thumb and the pinky finger using the Euclidean distance formula:
+
+![image](https://github.com/user-attachments/assets/dd2f8e3a-ec12-4cc6-8ff1-355f51a45657)
+
+A bounding box is drawn around the detected hand to visually indicate its position.The code calculates the distance between the landmark 5 and landmark 17 of the hand using the Euclidean distance formula:
+
 ![image](https://github.com/user-attachments/assets/ec749ae0-faf8-470a-8446-47cbc3a59f8f)
+
+This distance is mapped to real-world centimeters using a quadratic calibration formula:
+
+![image](https://github.com/user-attachments/assets/86eb5afa-75a8-4e90-afa2-54e16036d380)
+
+**Purpose:** The calculated distance determines whether the hand is "pinching" (used to interact with the duck).The system tracks the position of the duck and checks whether it overlaps with the hand's bounding box when the hand is in a "pinched" state (distance < 40 cm).
+
+also The remaining time is calculated as:
+
+![image](https://github.com/user-attachments/assets/1296ef8e-0ef8-4568-9a6f-a29eb386ae16)
+
+## the Whys:
 
