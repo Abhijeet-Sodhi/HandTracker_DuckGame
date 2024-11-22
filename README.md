@@ -8,6 +8,13 @@ The base code for this project was adapted from Murtaza's Workshop - Robotics an
 
 ## Demo
 
+https://github.com/user-attachments/assets/4abb04f8-44da-42a3-bbde-b52aceed92cc
+
+## The Code files:
+**hand.py:** is the base understanding of hand detection and how it works
+
+**game.py:** is the implementation of hand detection to create a game
+
 ## Functionality
 
 **Hand Tracking Setup:**
