@@ -1,21 +1,21 @@
-# HandTracker_DuckGame
+# HandTracker_DuckGame 🦆
 This project is a real-time interactive game where players use hand gestures detected via a webcam to "catch" a duck on the screen. The duck moves dynamically, and the game challenges players to score points within a time limit by interacting with it.
 
-## Credits
+## Credits 🤖
 [![Hand Distance Measurement with Normal Webcam + Game | OpenCV Python](https://img.youtube.com/vi/NGQgRH2_kq8&list=LL/0.jpg)](https://www.youtube.com/watch?v=NGQgRH2_kq8&list=LL) 
 Murtaza's Workshop - Robotics and AI
 The base code for this project was adapted from Murtaza's Workshop - Robotics and AI. While the original concept and code were used as a foundation, several modifications were made to suit the specific functionality and features of this Duck game.
 
-## Demo
+## Demo 🎬
 
 https://github.com/user-attachments/assets/4abb04f8-44da-42a3-bbde-b52aceed92cc
 
-## The Code files:
+## The Code files: 📄
 **hand.py:** is the base understanding of hand detection and how it works
 
 **game.py:** is the implementation of hand detection to create a game
 
-## Functionality
+## Functionality ⚙️
 
 **Hand Tracking Setup:**
 The game initializes a webcam feed and uses a pre-trained hand tracking module (HandDetector) to detect and track a player's hand in real-time.
@@ -53,7 +53,7 @@ The duck's size decreases as the score increases, making the game progressively 
 **End of Round:** When the timer runs out, a "Game Over" message displays the player's final score.
 **Restart or Exit:** Players can restart the game by pressing R or quit by pressing Q.
 
-## Installation
+## Installation 💻
 To run this "Hand Tracker Duck Challenge" game, you'll need to install the following dependencies:
 
 *pip install cvzone==1.6.1*
@@ -64,7 +64,7 @@ To run this "Hand Tracker Duck Challenge" game, you'll need to install the follo
 
 *pip install pygame==2.6.1*
 
-## Theory
+## Theory 🧮
 Hand detection process:
 A webcam feed is captured frame by frame.
 The HandDetector scans the video frame and identifies hand landmarks based on a pre-trained machine learning model.
@@ -86,7 +86,7 @@ also The remaining time is calculated as:
 
 ![image](https://github.com/user-attachments/assets/1296ef8e-0ef8-4568-9a6f-a29eb386ae16)
 
-## the Whys:
+## the Whys:❓
 **OpenCV** provides an efficient and robust framework for real-time video capture, image processing, and computer vision tasks over alternatives like Pillow or scikit-image.
 
 **cvzone** is a high-level wrapper for OpenCV that simplifies common tasks likeDrawing styled rectangles or Overlaying transparent PNG images It reduces boilerplate code while enhancing the visual output with a professional finish and making it more readable. 
