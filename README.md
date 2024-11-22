@@ -80,4 +80,8 @@ also The remaining time is calculated as:
 ![image](https://github.com/user-attachments/assets/1296ef8e-0ef8-4568-9a6f-a29eb386ae16)
 
 ## the Whys:
-
+**OpenCV** provides an efficient and robust framework for real-time video capture, image processing, and computer vision tasks over alternatives like Pillow or scikit-image.
+**cvzone** is a high-level wrapper for OpenCV that simplifies common tasks likeDrawing styled rectangles or Overlaying transparent PNG images It reduces boilerplate code while enhancing the visual output with a professional finish and making it more readable. 
+**NumPy** is crucial for mathematical operations, especially in the calibration and distance calculation process Used here to fit a quadratic polynomial
+**cvzone’s HandTrackingModule** eliminates the need for training a custom deep-learning model for hand detection, drastically simplifying the development process.
+**pygame.mixer** It provides simple integration with Python, making it easier to handle audio without external complex libraries like PyAudio.
