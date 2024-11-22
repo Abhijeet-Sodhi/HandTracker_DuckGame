@@ -49,7 +49,10 @@ The duck's size decreases as the score increases, making the game progressively 
 ## Installation
 To run this "Hand Tracker Duck Challenge" game, you'll need to install the following dependencies:
 *pip install cvzone==1.6.1*
+
 *pip install numpy==2.1.3*
+
 *pip install opencv-python==4.10.0.84*
+
 *pip install pygame==2.6.1*
 
