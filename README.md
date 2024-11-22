@@ -48,6 +48,7 @@ The duck's size decreases as the score increases, making the game progressively 
 
 ## Installation
 To run this "Hand Tracker Duck Challenge" game, you'll need to install the following dependencies:
+
 *pip install cvzone==1.6.1*
 
 *pip install numpy==2.1.3*
@@ -55,4 +56,12 @@ To run this "Hand Tracker Duck Challenge" game, you'll need to install the follo
 *pip install opencv-python==4.10.0.84*
 
 *pip install pygame==2.6.1*
+
+## Theory
+Hand detection process:
+A webcam feed is captured frame by frame.
+The HandDetector scans the video frame and identifies hand landmarks based on a pre-trained machine learning model.
+The landmarks include the positions of specific hand joints, such as fingertips, knuckles, and the base of the palm.
+A bounding box is drawn around the detected hand to visually indicate its position.The code calculates the distance between the base of the thumb and the pinky finger using the Euclidean distance formula:
+![image](https://github.com/user-attachments/assets/ec749ae0-faf8-470a-8446-47cbc3a59f8f)
 
